@@ -26,7 +26,7 @@ public class GeometryUI{
         areaOfSqrBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // System.out.println("Calculate Area of Square");
+                drawAreaOfSquareUI();
                 JOptionPane.showMessageDialog(null,"Calculate Area of Square");
 
             }

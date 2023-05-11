@@ -5,7 +5,7 @@ class Main  {
         Geometry geo = new Geometry();
         GeometryUI myObj = new GeometryUI();
            myObj.mainUI();
-        myObj.drawAreaOfSquareUI();
+        //myObj.drawAreaOfSquareUI();
 
     }
 }
