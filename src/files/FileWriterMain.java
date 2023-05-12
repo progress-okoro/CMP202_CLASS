@@ -1,19 +1,22 @@
 package files;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class FileWriterMain
 {
 
-    public void WriteData(String data){
+    public void WriteData(String data){ // thi code can be applied in pos printing paper
         try{
         File myfile = new File("test.txt");
         FileWriter writeToFile = new FileWriter(myfile);
         writeToFile.write(data);
+        writeToFile.append("more to file");
+
+        FileWriter fileWriter = new FileWriter(myfile);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            PrintWriter printWriter = new PrintWriter(bufferedWriter);
+
 
         writeToFile.flush();
         writeToFile.close();
